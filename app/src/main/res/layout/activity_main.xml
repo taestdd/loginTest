@@ -15,7 +15,7 @@
         android:text="Input Email"
         android:textSize="16dp"/>
     <EditText
-        android:id="@+id/InputId"
+        android:id="@+id/emailEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
@@ -31,13 +31,13 @@
         android:textSize="16dp"
         android:layout_marginTop="24dp"/>
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/passEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:hint="Place Holder"
         android:textSize="20dp"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/mainBtn"
