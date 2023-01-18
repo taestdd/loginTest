@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.TextView
 import com.opensurvey.logintext.R
 import com.opensurvey.logintext.hongsdatas.Black
 
@@ -24,6 +25,15 @@ class BlackAdapter(
 
             temprow = inf.inflate(R.layout.black_list_item, null) }
         val row = temprow!!
+
+        val blackData = mList[position]
+        val nameText = row.findViewById<TextView>(R.id.name)
+        val birthText = row.findViewById<TextView>(R.id.birth)
+
+        nameText.text = blackData.name
+        birthText.text = "(${blackData.birth})"
+
+
 
         return row
 
