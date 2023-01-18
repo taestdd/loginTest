@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.Toast
 import com.opensurvey.logintext.adeptors.BlackAdapter
 import com.opensurvey.logintext.hongsdatas.Black
 import kotlinx.android.synthetic.main.activity_my_list.*
@@ -30,6 +31,13 @@ class MyList : AppCompatActivity() {
         mAdapter = BlackAdapter(this,R.layout.black_list_item,mBlackList)
 
         blackList.adapter = mAdapter
+
+        blackList.setOnItemClickListener { parent, view, position, id ->
+
+            val clickedBlack = mBlackList[position]
+            Toast.makeText(this, "${clickedBlack.name}입니다.", Toast.LENGTH_SHORT).show()
+
+        }
 
     }
 }
