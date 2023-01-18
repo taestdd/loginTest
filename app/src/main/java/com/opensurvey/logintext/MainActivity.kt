@@ -1,5 +1,6 @@
 package com.opensurvey.logintext
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -16,10 +17,12 @@ class MainActivity : AppCompatActivity() {
             val inputPass = passEdt.text.toString()
 
             if (inputId == "admin@test.com" && inputPass == "qwer") {
-
                 val name = "태홍"
-
                 Toast.makeText(this, "${name.toString()} 관리자입니다.", Toast.LENGTH_SHORT).show()
+
+                val myIntent = Intent(this,MyList::class.java)
+                startActivity(myIntent)
+
             }
 
             else  {
