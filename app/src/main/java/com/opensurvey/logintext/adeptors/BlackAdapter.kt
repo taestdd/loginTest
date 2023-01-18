@@ -31,9 +31,9 @@ class BlackAdapter(
         val birthText = row.findViewById<TextView>(R.id.birth)
 
         nameText.text = blackData.name
-        birthText.text = "(${blackData.birth})"
 
-
+        val krAge = 2021 - blackData.birth + 1
+        birthText.text = "(${krAge}살)"
 
         return row
 
