@@ -8,4 +8,9 @@
     android:padding="24dp"
     tools:context=".MyList">
 
+    <ListView
+        android:id="@+id/blackList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </LinearLayout>
