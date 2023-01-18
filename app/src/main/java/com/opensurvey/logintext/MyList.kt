@@ -44,8 +44,8 @@ class MyList : AppCompatActivity() {
 
         blackList.setOnItemLongClickListener { parent, view, position, id ->
 
-            val longClickedBlack = mBlackList[position]
-            Toast.makeText(this, "${longClickedBlack.name}입니다람쥐.", Toast.LENGTH_SHORT).show()
+            mBlackList.removeAt(position)
+            mAdapter.notifyDataSetChanged()
 
             return@setOnItemLongClickListener true
 
