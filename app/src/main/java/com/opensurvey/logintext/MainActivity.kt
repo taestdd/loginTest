@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
 
         mainBtn.setOnClickListener{
 
-            val inputEmail = emailEdt.text.toString()
+            val inputId = emailEdt.text.toString()
             val inputPass = passEdt.text.toString()
 
-            if (inputEmail == "admin@test.com" && inputPass == "qwer") {
+            if (inputId == "admin@test.com" && inputPass == "qwer") {
 
                 val name = "태홍"
 
